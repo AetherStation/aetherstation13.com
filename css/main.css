@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+#top, #bottom, #left, #right {
+	background: #c313d4;
+	position: fixed;
+	-webkit-box-shadow:0px 0px 100px 15px rgba(198,33,207,0.8);
+	-moz-box-shadow: 0px 0px 100px 15px rgba(198,33,207,0.8);
+	box-shadow: 0px 0px 100px 15px rgba(198,33,207,0.8);
+	padding: 0px;
+}
+
+#left, #right {
+  top: 0; bottom: 0;
+  width: 2px;
+}
+
+#left { left: 0; }
+#right { right: 0; }
+  
+#top, #bottom {
+    left: 0; right: 0;
+    height: 2px;
+}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+#background-container {
+	overflow: hidden; /* Hide scrollbars */
+}
+
+#background {
+  background: url("/images/background-loop.webp") repeat-x;
+  height: 1773px;
+  width: 7200px;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3600px); /* The image width */
+  }
+}
+			
+.serverinfoline {
+  color: purple;
+  font-family: 'Urbox Nu';
+  font-size:22.0pt;
+}
+
+.serverinfobox {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  color: purple;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.center-h {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.top {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.bottom {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.join {
+  position: absolute;
+  left: 81%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.join img.image-hover {
+  position: absolute;
+  top: 48%;
+  right: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s;
+}
+.join:hover img.image-hover {
+  opacity: 1;
+}
+
+.forums {
+position: absolute;
+left: 40%;
+top: 90%;
+transform: translate(-50%, -50%);
+padding: 10px;
+}
+
+.forums img.image-hover {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s;
+}
+.forums:hover img.image-hover {
+  opacity: 1;
+}
+
+.discord {
+position: absolute;
+left: 60%;
+top: 90%;
+transform: translate(-50%, -50%);
+padding: 10px;
+}
+
+.discord img.image-hover {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s;
+}
+.discord:hover img.image-hover {
+  opacity: 1;
+}
+
+.github {
+position: absolute;
+left: 80%;
+top: 90%;
+transform: translate(-50%, -50%);
+padding: 10px;
+}
+
+.github img.image-hover {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s;
+}
+.github:hover img.image-hover {
+  opacity: 1;
+}
+
+@font-face {
+    font-family: 'Urbox Nu';
+    src: local('Urbox Nu Std 12 Extended Italic'), local('Urbox-Nu-Std-12-Extended-Italic'),
+        url('/fonts/UrboxNuStd12Extended-Italic.woff2') format('woff2'),
+        url('/fonts/UrboxNuStd12Extended-Italic.woff') format('woff'),
+        url('/fonts/UrboxNuStd12Extended-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
